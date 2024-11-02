@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2gikdp5o3mp7"]
+[gd_scene load_steps=3 format=3 uid="uid://b2gikdp5o3mp7"]
 
 [ext_resource type="Texture2D" uid="uid://chdlkxia3in6s" path="res://icon.svg" id="1_sttgm"]
+[ext_resource type="Texture2D" uid="uid://05g5s31onhco" path="res://troll.svg" id="2_dlv7g"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(217, 159)
+position = Vector2(606, 182)
 texture = ExtResource("1_sttgm")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(220, 328)
+scale = Vector2(0.810526, 0.80855)
+texture = ExtResource("2_dlv7g")
