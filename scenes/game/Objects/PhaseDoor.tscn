@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://df217rwhgtdv2"]
+
+[ext_resource type="Script" path="res://scripts/Objects/PhaseDoor.gd" id="1_cewdr"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6533y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3utlf"]
+size = Vector2(13, 29)
+
+[node name="PhaseDoor" type="StaticBody2D"]
+position = Vector2(1, 1)
+script = ExtResource("1_cewdr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(7.9375, 14.875)
+scale = Vector2(14.125, 30.25)
+texture = SubResource("PlaceholderTexture2D_6533y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7.5, 14.5)
+shape = SubResource("RectangleShape2D_3utlf")

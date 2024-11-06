@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cykhn2l7uadg6"]
+
+[ext_resource type="PackedScene" uid="uid://dh4aom3tqftth" path="res://scenes/game/player/Player.tscn" id="2_hslmb"]
+[ext_resource type="Script" path="res://scripts/game/PhaseManager.gd" id="2_junh5"]
+[ext_resource type="PackedScene" uid="uid://df217rwhgtdv2" path="res://scenes/game/Objects/PhaseDoor.tscn" id="3_n2dvf"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_hslmb")]
+position = Vector2(214, 139)
+
+[node name="PhaseManager" type="Node" parent="."]
+script = ExtResource("2_junh5")
+
+[node name="PhaseDoor" parent="." instance=ExtResource("3_n2dvf")]
+
+[node name="PhaseDoor2" parent="." instance=ExtResource("3_n2dvf")]
+position = Vector2(363, 214)
+active_phase = "B"
