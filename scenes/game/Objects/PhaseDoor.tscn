@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://df217rwhgtdv2"]
 
-[ext_resource type="Script" path="res://scripts/Objects/PhaseDoor.gd" id="1_cewdr"]
+[ext_resource type="Script" path="res://scripts/Objects/PhaseObject.gd" id="1_cewdr"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6533y"]
 
@@ -9,6 +9,7 @@ size = Vector2(13, 29)
 
 [node name="PhaseDoor" type="StaticBody2D"]
 position = Vector2(1, 1)
+collision_layer = 8
 script = ExtResource("1_cewdr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

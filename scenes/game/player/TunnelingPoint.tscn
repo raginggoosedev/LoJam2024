@@ -1,10 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwjcoateauymf"]
+[gd_scene load_steps=4 format=3 uid="uid://dwjcoateauymf"]
+
+[ext_resource type="Script" path="res://scripts/Objects/TunnelingPoint.gd" id="1_ye4mc"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cvlhn"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_48pxk"]
+size = Vector2(94.5, 88.5)
+
 [node name="TunnelingPoint" type="Marker2D" groups=["TunnelingPoints"]]
+script = ExtResource("1_ye4mc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(128.25, 130.75)
-scale = Vector2(257.5, 262.5)
+position = Vector2(47.25, 44.75)
+scale = Vector2(95.5, 90.5)
 texture = SubResource("PlaceholderTexture2D_cvlhn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(46.75, 44.75)
+shape = SubResource("RectangleShape2D_48pxk")
