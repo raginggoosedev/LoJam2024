@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwjcoateauymf"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cvlhn"]
+
+[node name="TunnelingPoint" type="Marker2D" groups=["TunnelingPoints"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(128.25, 130.75)
+scale = Vector2(257.5, 262.5)
+texture = SubResource("PlaceholderTexture2D_cvlhn")
